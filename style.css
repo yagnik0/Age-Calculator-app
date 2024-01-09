@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.2rem;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 60rem;
+    padding: 4rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2rem 2rem 15rem 2rem;
+}
+
+/*  Inputs Styling */
+
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: fit-content;
+    margin-bottom: 5rem;
+} 
+
+.box {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.date {
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+
+.inputs {
+    padding: 1.5rem 1.1rem;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 800;
+    outline: none;
+    color:hsl(0, 0%, 8%);
+    cursor: pointer;
+}
+
+::placeholder {
+    font-size: 1.5rem;
+    color:hsl(0, 1%, 44%);
+    font-weight: 800;
+}
+
+/* Button styling */
+
+.btn-field {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.line{
+    border: 1px solid hsl(0, 0%, 94%);
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    left: 90%;
+    transform: translateY(-30px);
+    z-index: 1;
+    background-color: hsl(259, 100%, 65%);
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+/* Outputs Styling */
+
+.output-field {
+    font-size: 5.2rem;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.input {
+    color: hsl(259, 100%, 65%);
+    margin-right: 0.8rem;
+}
+
+/* Media Queries  */
+ @media (max-width : 40em) {
+    .main-content {
+        max-width: 40rem;
+    }
+
+    .btn-field{
+        margin-bottom: 4rem;
+    }
+
+    .arrow {
+        left: 43%;
+    }
+
+    .inputs {
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+        width: 62%;
+    }
+
+    .output-field {
+        font-size: 4.2rem;
+    }
+}
+
+
+
+
